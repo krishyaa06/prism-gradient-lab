@@ -1,0 +1,29 @@
+{
+  "name": "prism-gradient-lab",
+  "version": "1.0.0",
+  "description": "Visual CSS gradient editor with draggable stops, presets, share links and Tailwind output.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "css-gradient",
+    "gradient-generator",
+    "css",
+    "tailwindcss",
+    "design-tools",
+    "frontend",
+    "vanilla-js",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-gradient-lab.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-gradient-lab/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

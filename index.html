@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prism Gradient Lab · Prism Protocol</title>
+  <meta name="description" content="Visual CSS gradient editor with draggable stops, presets, share links and Tailwind output." />
+  <meta name="theme-color" content="#07080f" />
+  <meta property="og:title" content="Prism Gradient Lab · Prism Protocol" />
+  <meta property="og:description" content="Visual CSS gradient editor with draggable stops, presets, share links and Tailwind output." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <style>:root{--accent:#6C63FF;--accent-2:#FF6B8A}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark">◇</span><b>PRISM</b><span>Gradient Lab</span></a>
+    <nav>
+      <a class="btn small" href="https://github.com/krishyaa06/prism-gradient-lab" target="_blank" rel="noreferrer">★ GitHub</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">🌈 Design Tools</p>
+      <h1>Gradients, <em>dialed in.</em></h1>
+      <p class="lead">Drag color stops, switch between linear, radial and conic, and copy production-ready CSS or Tailwind classes.</p>
+    </section>
+    <section class="grid lab">
+      <div class="card stage-card">
+        <div class="stage" id="stage"><div class="stage-text"><b>Prism Protocol</b><span>Build. Create. Compete.</span></div></div>
+        <div class="bar-wrap"><div class="bar" id="bar" title="Click to add a stop"></div><div id="handles"></div></div>
+        <div class="row presets" id="presets"></div>
+      </div>
+      <div class="stack">
+        <div class="card">
+          <div class="card-title"><h2>Type</h2><div class="tabs" id="type"><button class="on" data-v="linear">Linear</button><button data-v="radial">Radial</button><button data-v="conic">Conic</button></div></div>
+          <label class="field" id="angleF">Angle <span class="mono" id="angleV"></span><input type="range" id="angle" min="0" max="360" /></label>
+          <div class="grid g2 pos" id="posF"><label class="field">Center X<input type="range" id="cx" min="0" max="100" /></label><label class="field">Center Y<input type="range" id="cy" min="0" max="100" /></label></div>
+        </div>
+        <div class="card">
+          <div class="card-title"><h2>Color stops</h2><button class="btn small" id="add">+ Stop</button></div>
+          <div id="stops" class="stops"></div>
+        </div>
+        <div class="card">
+          <div class="card-title"><div class="tabs" id="out"><button class="on" data-v="css">CSS</button><button data-v="tw">Tailwind</button></div><div class="row"><button class="btn small" id="rand">Random</button><button class="btn small" id="share">Share link</button><button class="btn small primary" id="copy">Copy</button></div></div>
+          <pre class="out code-out" id="code"></pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="foot">
+    <span>◇ Prism Gradient Lab · Part of <a href="https://dc.gg/prismprotocol" target="_blank" rel="noreferrer">Prism Protocol</a></span>
+    <span><a href="https://github.com/krishyaa06/prism-gradient-lab" target="_blank" rel="noreferrer">Source</a> · MIT License · Runs 100% in your browser</span>
+  </footer>
+  <script src="js/prism.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
